@@ -1,0 +1,33 @@
+version: "3"
+
+services:
+  api-meli:
+    build:
+      context: ./api
+      dockerfile: Dockerfile.dev
+    container_name: api-meli
+    ports:
+      - 3000:3000
+      - 9229:9229
+    env_file: ./api/.env
+    volumes:
+      - ./api:/usr/src/app
+      - ./dist:/usr/src/app/dist
+    networks:
+      - meli-net
+  front-meli:
+    build:
+      context: ./front
+      dockerfile: Dockerfile.dev
+    container_name: front-meli
+    ports:
+      - 8080:8080
+    tty: true
+    env_file: ./front/.env
+    volumes:
+      - ./front:/usr/src/app
+    networks:
+      - meli-net
+networks:
+  meli-net:
+    driver: bridge

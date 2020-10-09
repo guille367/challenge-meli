@@ -1,0 +1,32 @@
+version: "3"
+
+services:
+  api:
+    build:
+      context: ./api
+      dockerfile: Dockerfile
+    container_name: api
+    ports:
+      - 3000:3000
+      - 9229:9229
+    env_file: ./api/.env
+    volumes:
+      - ./api:/user/src/app
+    networks:
+      - meli-net
+  server:
+    build:
+      context: .
+      dockerfile: Dockerfile.server
+    container_name: reverse-proxy
+    links:
+      - api:nginx_api
+    ports:
+      - 80:80
+    networks:
+      - meli-net
+    depends_on:
+      - api
+networks:
+  meli-net:
+    driver: bridge
