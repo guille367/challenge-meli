@@ -1,11 +1,8 @@
-import { Router } from 'express';
-import UserRouter from './Users';
+import { Router } from "express";
+import ItemsRouter from "@components/items/items.routes";
 
-// Init router and path
 const router = Router();
 
-// Add sub-routes
-router.use('/users', UserRouter);
+router.use("/items", ItemsRouter);
 
-// Export the base-router
 export default router;
