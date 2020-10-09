@@ -1,12 +1,12 @@
-import Item from "./item";
+import { IItemsResponse } from "./item";
 import itemsDao from "./items.dao";
 
 class ItemsServices {
-  async getAll(): Promise<Item[]> {
-    return itemsDao.getAll();
+  async search(query: string): Promise<IItemsResponse[] | void> {
+    return itemsDao.search(query);
   }
 
-  async getById(id: number): Promise<Item> {
+  async getById(id: string): Promise<IItemsResponse | void> {
     return itemsDao.getById(id);
   }
 }

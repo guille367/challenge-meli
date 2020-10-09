@@ -25,7 +25,9 @@
     "@server": "dist/Server"
   },
   "dependencies": {
+    "@types/axios": "^0.14.0",
     "@types/dotenv": "^8.2.0",
+    "axios": "^0.20.0",
     "command-line-args": "^5.1.1",
     "cookie-parser": "^1.4.5",
     "dotenv": "^8.2.0",
