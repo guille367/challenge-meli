@@ -8,7 +8,6 @@ class ItemsController {
     try {
       const query = req.query["q"]?.toString() || "";
       const data = await itemsService.search(query);
-      debugger;
 
       return res.status(StatusCodes.OK).send(data);
     } catch (error) {
