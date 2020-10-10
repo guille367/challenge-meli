@@ -1,23 +1,29 @@
-import { IItemResponse, ISearchResponse } from "./item.models";
+import {
+  IItem,
+  IMeliItemDescriptionResponse,
+  IMeliItemResponse,
+  IMeliSearchItemResponse,
+} from "./item.models";
 import axios from "axios";
 import { ENDPOINTS } from "@shared/constants";
 
 class ItemsDAO {
   constructor() {}
 
-  async search(query: string): Promise<ISearchResponse> {
-    const response = await axios.get<ISearchResponse>(
+  async search(query: string): Promise<IMeliSearchItemResponse> {
+    const response = await axios.get<IMeliSearchItemResponse>(
       `${ENDPOINTS.SEARCH}?q=${query}`
     );
 
-    return response.data as ISearchResponse;
+    return response.data as IMeliSearchItemResponse;
   }
 
-  async getById(id: string): Promise<IItemResponse | void> {
-    const response = axios.get<IItemResponse>(`${ENDPOINTS.ITEMS}/${id}`);
-    const responseDescription = axios.get<IItemResponse>(
+  async getById(id: string): Promise<IMeliItemResponse> {
+    const response = axios.get<IMeliItemResponse>(`${ENDPOINTS.ITEMS}/${id}`);
+    const responseDescription = axios.get<IMeliItemDescriptionResponse>(
       `${ENDPOINTS.ITEMS}/${id}/description`
     );
+
     const [item, description] = await Promise.all([
       response,
       responseDescription,
@@ -25,10 +31,10 @@ class ItemsDAO {
 
     const fullItem = {
       ...item.data,
-      ...description.data,
+      description: description.data,
     };
 
-    return fullItem as IItemResponse;
+    return fullItem as IMeliItemResponse;
   }
 }
 

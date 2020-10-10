@@ -1,4 +1,15 @@
-interface IItemSearchResponse {
+export interface IPrice {
+  currency: string;
+  amount: number;
+  decimals: number;
+}
+
+export interface IItem extends IItemSearch {
+  sold_quantity: number;
+  description: string;
+}
+
+export interface IItemSearch {
   id: string;
   title: string;
   price: IPrice;
@@ -7,23 +18,18 @@ interface IItemSearchResponse {
   free_shipping: boolean;
 }
 
-interface IPrice {
-  currency: string;
-  amount: number;
-  decimals: number;
+export interface ISearchResponse {
+  categories: string[];
+  items: IItemSearch[];
 }
 
-interface IItem extends IItemSearchResponse {
-  condition: string;
-  free_shipping: boolean;
+export class Price implements IPrice {
+  currency: string = "";
+  amount: number = 0;
+  decimals: number = 0;
 }
 
-interface IAuthor {
-  name: string;
-  lastname: string;
-}
-
-class ItemSearchResponse implements IItemSearchResponse {
+export class ItemSearch implements IItemSearch {
   id: string = "";
   title: string = "";
   price: IPrice = new Price();
@@ -32,42 +38,58 @@ class ItemSearchResponse implements IItemSearchResponse {
   free_shipping: boolean = false;
 }
 
-class Author implements IAuthor {
-  name: string = "";
-  lastname: string = "";
-}
-
-class Item extends ItemSearchResponse {
+export class Item extends ItemSearch implements IItem {
   sold_quantity: number = 0;
   description: string = "";
 }
 
-class Price implements IPrice {
-  currency: string = "";
-  amount: number = 0;
-  decimals: number = 0;
-}
-
-/////////////////// BY ID ///////////////////////
-
-export interface IItemResponse {
-  author: IAuthor;
-  item: IItem;
-}
-
-export class ItemResponse implements IItemResponse {
-  author: IAuthor = new Author();
-  item: IItem = new Item();
-}
-
-/////////////////// SEARCH BY QUERY ///////////////////////
-
-export interface ISearchResponse {
-  categories: string[];
-  items: IItemResponse[];
-}
-
 export class SearchResponse implements ISearchResponse {
   categories: string[] = [];
-  items: IItemResponse[] = [];
+  items: IItemSearch[] = [];
+}
+
+export interface IMeliItemDescriptionResponse {
+  plain_text: string;
+  text: string;
+}
+
+export interface IMeliCategoryResponse {
+  id: string;
+  name: string;
+}
+
+export interface IMeliItemResponse {
+  id: string;
+  title: string;
+  currency_id: string;
+  price: number;
+  decimals: number;
+  condition: string;
+  shipping: {
+    free_shipping: boolean;
+  };
+  pictures: [
+    {
+      url: string;
+    }
+  ];
+  sold_quantity: number;
+  description: IMeliItemDescriptionResponse;
+}
+
+export interface IMeliSearchItemResponse {
+  categories: IMeliCategoryResponse;
+  results: [
+    {
+      category_id: string;
+      id: string;
+      title: string;
+      currency_id: string;
+      price: number;
+      decimals: number;
+      picture: string;
+      condition: string;
+      free_shipping: boolean;
+    }
+  ];
 }

@@ -1,14 +1,22 @@
-import { IItemResponse, ISearchResponse } from "./item.models";
+import { IItem, IItemSearch } from "./item.models";
 import itemsDao from "./items.dao";
-import { mapItem } from "./item.mapper";
+import ItemAdapter from "./item.adapter";
 class ItemsServices {
-  async search(query: string): Promise<ISearchResponse> {
-    return itemsDao.search(query);
+  itemAdapter: ItemAdapter;
+
+  constructor() {
+    this.itemAdapter = new ItemAdapter();
   }
 
-  async getById(id: string): Promise<IItemResponse> {
+  async search(query: string): Promise<IItemSearch> {
+    const itemsResponse = await itemsDao.search(query);
+    const mappedItems = this.itemAdapter.getItemList(itemsResponse);
+    return mappedItems;
+  }
+
+  async getById(id: string): Promise<IItem> {
     const itemsResponse = await itemsDao.getById(id);
-    const mappedItem = mapItem(itemsResponse);
+    const mappedItem = this.itemAdapter.getItem(itemsResponse);
     return mappedItem;
   }
 }
