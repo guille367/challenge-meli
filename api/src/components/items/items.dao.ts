@@ -1,5 +1,6 @@
 import {
   IItem,
+  IMeliCategoryResponse,
   IMeliItemDescriptionResponse,
   IMeliItemResponse,
   IMeliSearchItemResponse,

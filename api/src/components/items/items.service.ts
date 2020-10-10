@@ -1,4 +1,4 @@
-import { IItem, IItemSearch } from "./item.models";
+import { IItem, ISearchResponse } from "./item.models";
 import itemsDao from "./items.dao";
 import ItemAdapter from "./item.adapter";
 class ItemsServices {
@@ -8,7 +8,7 @@ class ItemsServices {
     this.itemAdapter = new ItemAdapter();
   }
 
-  async search(query: string): Promise<IItemSearch> {
+  async search(query: string): Promise<ISearchResponse> {
     const itemsResponse = await itemsDao.search(query);
     const mappedItems = this.itemAdapter.getItemList(itemsResponse);
     return mappedItems;

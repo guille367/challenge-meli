@@ -56,6 +56,7 @@ export interface IMeliItemDescriptionResponse {
 export interface IMeliCategoryResponse {
   id: string;
   name: string;
+  results: number;
 }
 
 export interface IMeliItemResponse {
@@ -77,19 +78,31 @@ export interface IMeliItemResponse {
   description: IMeliItemDescriptionResponse;
 }
 
+export interface IMeliSearchItem {
+  category_id: string;
+  id: string;
+  title: string;
+  currency_id: string;
+  price: number;
+  decimals: number;
+  thumbnail: string;
+  condition: string;
+  free_shipping: boolean;
+}
+
 export interface IMeliSearchItemResponse {
-  categories: IMeliCategoryResponse;
-  results: [
+  available_filters: [
     {
-      category_id: string;
       id: string;
-      title: string;
-      currency_id: string;
-      price: number;
-      decimals: number;
-      picture: string;
-      condition: string;
-      free_shipping: boolean;
+      name: string;
+      values: [
+        {
+          id: string;
+          name: string;
+          results: number;
+        }
+      ];
     }
   ];
+  results: IMeliSearchItem[];
 }
