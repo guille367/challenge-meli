@@ -1,3 +1,8 @@
+export interface IAuthor {
+  name: string;
+  lastname: string;
+}
+
 export interface IPrice {
   currency: string;
   amount: number;
@@ -5,11 +10,13 @@ export interface IPrice {
 }
 
 export interface IItem extends IItemSearch {
+  author?: IAuthor;
   sold_quantity: number;
   description: string;
 }
 
 export interface IItemSearch {
+  author?: IAuthor;
   id: string;
   title: string;
   price: IPrice;
@@ -19,6 +26,7 @@ export interface IItemSearch {
 }
 
 export interface ISearchResponse {
+  author?: IAuthor;
   categories: string[];
   items: IItemSearch[];
 }
@@ -44,6 +52,7 @@ export class Item extends ItemSearch implements IItem {
 }
 
 export class SearchResponse implements ISearchResponse {
+  author?: IAuthor;
   categories: string[] = [];
   items: IItemSearch[] = [];
 }

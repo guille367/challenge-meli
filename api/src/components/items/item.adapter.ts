@@ -4,8 +4,6 @@ import {
   IMeliItemResponse,
   IMeliSearchItemResponse,
   ISearchResponse,
-  ItemSearch,
-  SearchResponse,
 } from "./item.models";
 
 export default class ItemAdapter {
@@ -29,7 +27,6 @@ export default class ItemAdapter {
   }
 
   getItemList(meliItem: IMeliSearchItemResponse): ISearchResponse {
-    debugger;
     const categories =
       meliItem.available_filters
         .find((filter) => filter.id === "category")
