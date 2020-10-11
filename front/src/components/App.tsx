@@ -1,8 +1,12 @@
 import React from "react";
-import "../styles/App.scss";
+import Search from "./Search";
 
 function App() {
-  return <div>Hola!</div>;
+  return (
+    <div className="custom-container">
+      <Search />
+    </div>
+  );
 }
 
 export default App;

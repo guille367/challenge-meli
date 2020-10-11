@@ -1,0 +1,19 @@
+@import "./variables.scss";
+
+.search-nav {
+  background-color: $primary-color;
+  display: flex;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 -6%;
+
+  &--input {
+    height: 100%;
+    width: 100%;
+  }
+
+  .logo_mini {
+    height: 100%;
+  }
+}
