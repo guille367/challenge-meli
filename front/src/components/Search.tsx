@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 import logo from "../images/logo_ml_mini.png";
 import search from "../images/ic_search.png";
+import { useHistory } from "react-router-dom";
 
 function Search(_props: any) {
+  let history = useHistory();
   const [text, setText] = useState<string>("");
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    alert();
+    history.push(`/items?q=${text}`);
   };
 
   const handleTextSearch = (e: React.FormEvent<HTMLInputElement>) => {
@@ -20,7 +22,7 @@ function Search(_props: any) {
         onSubmit={handleSubmit}
         className="search-nav grid grid-cols-12 gap-12"
       >
-        <a className="link-home col-start-2 col-span-1" href="#">
+        <a className="link-home col-start-2 col-span-1" href="/">
           <img src={logo} />
         </a>
         <div className="col-span-9 search-nav--input">

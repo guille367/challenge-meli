@@ -6,7 +6,7 @@ import Detail from "./Detail";
 
 function App() {
   return (
-    <>
+    <Router>
       <div className="grid grid-cols-12">
         <div className="col-span-12">
           <Search />
@@ -14,19 +14,17 @@ function App() {
       </div>
       <div className="grid grid-cols-12 gap-12">
         <div className="col-start-2 col-span-10">
-          <Router>
-            <Switch>
-              <Route path="/items/:id">
-                <Detail />
-              </Route>
-              <Route path="/items">
-                <Results />
-              </Route>
-            </Switch>
-          </Router>
+          <Switch>
+            <Route path="/items/:id">
+              <Detail />
+            </Route>
+            <Route path="/items">
+              <Results />
+            </Route>
+          </Switch>
         </div>
       </div>
-    </>
+    </Router>
   );
 }
 
