@@ -1,6 +1,4 @@
 import {
-  IItem,
-  IMeliCategoryResponse,
   IMeliItemDescriptionResponse,
   IMeliItemResponse,
   IMeliSearchItemResponse,
@@ -39,4 +37,4 @@ class ItemsDAO {
   }
 }
 
-export default new ItemsDAO();
+export default ItemsDAO;

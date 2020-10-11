@@ -1,0 +1,590 @@
+{
+  "categories": [
+    "Computación",
+    "Celulares y Smartphones",
+    "Accesorios para Celulares",
+    "Repuestos de Celulares",
+    "Libros, Revistas y Comics",
+    "Smartwatches y Accesorios",
+    "Joyas y Relojes",
+    "Electrónica, Audio y Video",
+    "Música, Películas y Series",
+    "Ropa y Accesorios",
+    "Hogar, Muebles y Jardín",
+    "Alimentos y Bebidas",
+    "Instrumentos Musicales",
+    "Accesorios para Vehículos",
+    "Industrias y Oficinas",
+    "Deportes y Fitness",
+    "Antigüedades y Colecciones",
+    "Juegos y Juguetes",
+    "Souvenirs, Cotillón y Fiestas",
+    "Herramientas y Construcción",
+    "Servicios",
+    "Belleza y Cuidado Personal",
+    "Cámaras y Accesorios",
+    "Salud y Equipamiento Médico",
+    "Consolas y Videojuegos",
+    "Animales y Mascotas",
+    "Arte, Librería y Mercería",
+    "Bebés",
+    "Otras categorías",
+    "Otros"
+  ],
+  "items": [
+    {
+      "id": "MLA864047634",
+      "title": "iPad Apple 7ª Generación 2019 A2197 10.2 32gb Space Grey Con Memoria Ram 3gb",
+      "price": {
+        "currency": "ARS",
+        "amount": 48780,
+        "decimals": 0
+      },
+      "condition": "new",
+      "picture": "http://http2.mlstatic.com/D_651180-MLA42227826734_062020-I.jpg"
+    },
+    {
+      "id": "MLA847761579",
+      "title": "Auriculares Apple Earpods Blanco",
+      "price": {
+        "currency": "ARS",
+        "amount": 999,
+        "decimals": 0
+      },
+      "condition": "new",
+      "picture": "http://http2.mlstatic.com/D_765719-MLA41326292679_042020-I.jpg"
+    },
+    {
+      "id": "MLA831825009",
+      "title": "Macbook Air 2020 Retina Sensor Id Ssd256gb 18 Cuotas Sin Int",
+      "price": {
+        "currency": "ARS",
+        "amount": 259999,
+        "decimals": 0
+      },
+      "condition": "new",
+      "picture": "http://http2.mlstatic.com/D_776384-MLA40604797902_012020-O.jpg"
+    },
+    {
+      "id": "MLA865569740",
+      "title": "Macbook Air 13.3 Intel Core I5 512gb Ssd, 8gb (nuevo Modelo)",
+      "price": {
+        "currency": "ARS",
+        "amount": 219000,
+        "decimals": 0
+      },
+      "condition": "new",
+      "picture": "http://http2.mlstatic.com/D_775151-MLA42442280464_072020-O.jpg"
+    },
+    {
+      "id": "MLA776957097",
+      "title": "Apple iPad 32gb 7ma Generacion 10.2 Nueva Cerrada + Factura",
+      "price": {
+        "currency": "ARS",
+        "amount": 49499,
+        "decimals": 0
+      },
+      "condition": "new",
+      "picture": "http://http2.mlstatic.com/D_922083-MLA32720295726_102019-O.jpg"
+    },
+    {
+      "id": "MLA841793087",
+      "title": "iPhone 6 32gb Apple Como Nuevo Entrega Inmediata",
+      "price": {
+        "currency": "ARS",
+        "amount": 32000,
+        "decimals": 0
+      },
+      "condition": "new",
+      "picture": "http://http2.mlstatic.com/D_915904-MLA40971798502_032020-O.jpg"
+    },
+    {
+      "id": "MLA861602245",
+      "title": "Teléfono Celular Nokia 5.1 Plus 5.8 3gb 32gb 13/8mp",
+      "price": {
+        "currency": "ARS",
+        "amount": 26999,
+        "decimals": 0
+      },
+      "condition": "new",
+      "picture": "http://http2.mlstatic.com/D_894243-MLA42266766848_062020-O.jpg"
+    },
+    {
+      "id": "MLA879391435",
+      "title": "iPhone 7 128 Gb Negro Mate 2 Gb Liberados Nuevos Garantia",
+      "price": {
+        "currency": "ARS",
+        "amount": 68000,
+        "decimals": 0
+      },
+      "condition": "new",
+      "picture": "http://http2.mlstatic.com/D_636620-MLA31003091126_062019-O.jpg"
+    },
+    {
+      "id": "MLA801271168",
+      "title": "Celular Alcatel 1 4g 16 Gb Libre Nuevo Garantia Local Flex",
+      "price": {
+        "currency": "ARS",
+        "amount": 14999,
+        "decimals": 0
+      },
+      "condition": "new",
+      "picture": "http://http2.mlstatic.com/D_923208-MLA31487002373_072019-O.jpg"
+    },
+    {
+      "id": "MLA864098740",
+      "title": "Apple iPhone SE 2020 64gb Caja Sellada Gtia Oficial Martinez",
+      "price": {
+        "currency": "ARS",
+        "amount": 114990,
+        "decimals": 0
+      },
+      "condition": "new",
+      "picture": "http://http2.mlstatic.com/D_619589-MLA42325555976_062020-O.jpg"
+    },
+    {
+      "id": "MLA818594282",
+      "title": "Nuevo Apple iPad 7 Gen 2019 Pantalla 10,2 Retina 32gb Wifi ",
+      "price": {
+        "currency": "ARS",
+        "amount": 50980,
+        "decimals": 0
+      },
+      "condition": "new",
+      "picture": "http://http2.mlstatic.com/D_651180-MLA42227826734_062020-O.jpg"
+    },
+    {
+      "id": "MLA819794264",
+      "title": "Funda Silicone Case Para iPhone 6 6s 7 8 Plus X Xs Xr Xs Max",
+      "price": {
+        "currency": "ARS",
+        "amount": 999.99,
+        "decimals": 0
+      },
+      "condition": "new",
+      "picture": "http://http2.mlstatic.com/D_825454-MLA43417874268_092020-O.jpg"
+    },
+    {
+      "id": "MLA796330870",
+      "title": "Envios Celtec Belgrano",
+      "price": {
+        "currency": "ARS",
+        "amount": 100,
+        "decimals": 0
+      },
+      "condition": "new",
+      "picture": "http://http2.mlstatic.com/D_789148-MLA43711534715_102020-O.jpg"
+    },
+    {
+      "id": "MLA874119230",
+      "title": "Apple Macbook Air I3 8gb Ssd 256gb Retina (nuevo Modelo)",
+      "price": {
+        "currency": "ARS",
+        "amount": 185000,
+        "decimals": 0
+      },
+      "condition": "new",
+      "picture": "http://http2.mlstatic.com/D_629193-MLA43208244609_082020-O.jpg"
+    },
+    {
+      "id": "MLA816015329",
+      "title": "Cable Cargador Macbook Air Pro Magsafe 1 Y 2 Para Apple 4560",
+      "price": {
+        "currency": "ARS",
+        "amount": 1999,
+        "decimals": 0
+      },
+      "condition": "new",
+      "picture": "http://http2.mlstatic.com/D_846077-MLA32256765168_092019-I.jpg"
+    },
+    {
+      "id": "MLA829540848",
+      "title": "iPhone 6 Plus Dorado 64 Gigas Sin Detalles Semi Nuevo",
+      "price": {
+        "currency": "ARS",
+        "amount": 51000,
+        "decimals": 0
+      },
+      "condition": "used",
+      "picture": "http://http2.mlstatic.com/D_711870-MLA43525064606_092020-O.jpg"
+    },
+    {
+      "id": "MLA620551213",
+      "title": "Cable Thunderbolt Mini Displayport Hdmi De 180cm Apple Mac",
+      "price": {
+        "currency": "ARS",
+        "amount": 1590,
+        "decimals": 0
+      },
+      "condition": "new",
+      "picture": "http://http2.mlstatic.com/D_644007-MLA31113966431_062019-O.jpg"
+    },
+    {
+      "id": "MLA861729300",
+      "title": "iPhone 7 32 Gb Impecable Gold Batería Al %100 Garantía",
+      "price": {
+        "currency": "ARS",
+        "amount": 48000,
+        "decimals": 0
+      },
+      "condition": "new",
+      "picture": "http://http2.mlstatic.com/D_921887-MLA42169445317_062020-O.jpg"
+    },
+    {
+      "id": "MLA827764197",
+      "title": "Modulo iPhone 6 Display Pantalla Lcd Touch + Kit Instalacion",
+      "price": {
+        "currency": "ARS",
+        "amount": 4599.99,
+        "decimals": 0
+      },
+      "condition": "new",
+      "picture": "http://http2.mlstatic.com/D_747192-MLA43731791393_102020-O.jpg"
+    },
+    {
+      "id": "MLA767985476",
+      "title": "Cable Original iPhone 5s 6s 7 Plus Cargador Lightning Datos",
+      "price": {
+        "currency": "ARS",
+        "amount": 990,
+        "decimals": 0
+      },
+      "condition": "new",
+      "picture": "http://http2.mlstatic.com/D_826859-MLA31778788410_082019-O.jpg"
+    },
+    {
+      "id": "MLA880736433",
+      "title": "Apple Macbook Pro 16'' Retina Core I9 16gb Ssd 1tb Nueva!",
+      "price": {
+        "currency": "ARS",
+        "amount": 474900,
+        "decimals": 0
+      },
+      "condition": "new",
+      "picture": "http://http2.mlstatic.com/D_982023-MLA43580833016_092020-O.jpg"
+    },
+    {
+      "id": "MLA753948093",
+      "title": "Celular Alcatel 1 16gb Libre Quad Core Android Go Garantia",
+      "price": {
+        "currency": "ARS",
+        "amount": 11999,
+        "decimals": 0
+      },
+      "condition": "new",
+      "picture": "http://http2.mlstatic.com/D_864335-MLA31143711744_062019-O.jpg"
+    },
+    {
+      "id": "MLA850413550",
+      "title": "Teclado Apple iPad A10 10.2 Pulgadas ",
+      "price": {
+        "currency": "ARS",
+        "amount": 26999,
+        "decimals": 0
+      },
+      "condition": "new",
+      "picture": "http://http2.mlstatic.com/D_783598-MLA41485744774_042020-O.jpg"
+    },
+    {
+      "id": "MLA800775318",
+      "title": "iPhone 6s 32gb Buen Estado Blanco Libre C/garantia De 3 Mese",
+      "price": {
+        "currency": "ARS",
+        "amount": 32299,
+        "decimals": 0
+      },
+      "condition": "new",
+      "picture": "http://http2.mlstatic.com/D_671582-MLA31723590486_082019-I.jpg"
+    },
+    {
+      "id": "MLA830537180",
+      "title": "Modulo iPhone 6s Display Pantalla Lcd Touch +kit Instalacion",
+      "price": {
+        "currency": "ARS",
+        "amount": 4599.99,
+        "decimals": 0
+      },
+      "condition": "new",
+      "picture": "http://http2.mlstatic.com/D_611983-MLA40495163469_012020-O.jpg"
+    },
+    {
+      "id": "MLA869260113",
+      "title": "Lapiz Optico Pencil Stylus Para Apple iPad 8 Gen Oferta",
+      "price": {
+        "currency": "ARS",
+        "amount": 9990,
+        "decimals": 0
+      },
+      "condition": "new",
+      "picture": "http://http2.mlstatic.com/D_601661-MLA42774849495_072020-I.jpg"
+    },
+    {
+      "id": "MLA769016034",
+      "title": "Apple iPad 32gb 10.2 Retina 7ma Gen Nuevo Modelo Lanzamiento",
+      "price": {
+        "currency": "ARS",
+        "amount": 62999,
+        "decimals": 0
+      },
+      "condition": "new",
+      "picture": "http://http2.mlstatic.com/D_960552-MLA32776327946_112019-O.jpg"
+    },
+    {
+      "id": "MLA872795297",
+      "title": "Apple Mvh42ll/a Macbook Air I5 1.1ghz 8gb 512gb 13.3 S 2020",
+      "price": {
+        "currency": "ARS",
+        "amount": 234900,
+        "decimals": 0
+      },
+      "condition": "new",
+      "picture": "http://http2.mlstatic.com/D_602265-MLA43136790338_082020-O.jpg"
+    },
+    {
+      "id": "MLA861730684",
+      "title": "iPhone 7 32gb Gb Rose Batería %100 Celtec Belgrano",
+      "price": {
+        "currency": "ARS",
+        "amount": 48000,
+        "decimals": 0
+      },
+      "condition": "new",
+      "picture": "http://http2.mlstatic.com/D_868644-MLA42169481664_062020-O.jpg"
+    },
+    {
+      "id": "MLA841827807",
+      "title": "Celular iPhone 7 Plus 128gb Black Como Nuevo",
+      "price": {
+        "currency": "ARS",
+        "amount": 60000,
+        "decimals": 0
+      },
+      "condition": "new",
+      "picture": "http://http2.mlstatic.com/D_654470-MLA40974333510_032020-O.jpg"
+    },
+    {
+      "id": "MLA875862883",
+      "title": "iPhone 7 Plus 128 Gb Celtec Belgrano",
+      "price": {
+        "currency": "ARS",
+        "amount": 65000,
+        "decimals": 0
+      },
+      "condition": "new",
+      "picture": "http://http2.mlstatic.com/D_978004-MLA43316862666_082020-O.jpg"
+    },
+    {
+      "id": "MLA864099849",
+      "title": "Apple iPhone SE 2020 128gb Caja Sellada Gtia Ofic. Martinez",
+      "price": {
+        "currency": "ARS",
+        "amount": 119990,
+        "decimals": 0
+      },
+      "condition": "new",
+      "picture": "http://http2.mlstatic.com/D_882861-MLA42325931939_062020-O.jpg"
+    },
+    {
+      "id": "MLA822742578",
+      "title": "Apple iPad 32gb 7ma Generacion 10.2 Nueva Cerrada + Cuotas",
+      "price": {
+        "currency": "ARS",
+        "amount": 48899,
+        "decimals": 0
+      },
+      "condition": "new",
+      "picture": "http://http2.mlstatic.com/D_922083-MLA32720295726_102019-O.jpg"
+    },
+    {
+      "id": "MLA627282565",
+      "title": "Cargador Apple iPhone 5 6 7 8 Plus iPod Original A1385 5v 1a",
+      "price": {
+        "currency": "ARS",
+        "amount": 999,
+        "decimals": 0
+      },
+      "condition": "new",
+      "picture": "http://http2.mlstatic.com/D_860267-MLA31810735053_082019-O.jpg"
+    },
+    {
+      "id": "MLA725235643",
+      "title": "Mercado Pago Point Bluetooth - Lector De Tarjetas Mpos",
+      "price": {
+        "currency": "ARS",
+        "amount": 189,
+        "decimals": 0
+      },
+      "condition": "new",
+      "picture": "http://http2.mlstatic.com/D_628340-MLA42954691780_072020-I.jpg"
+    },
+    {
+      "id": "MLA855607793",
+      "title": "iPhone 8 Plus 64 Gb ",
+      "price": {
+        "currency": "ARS",
+        "amount": 80000,
+        "decimals": 0
+      },
+      "condition": "new",
+      "picture": "http://http2.mlstatic.com/D_766882-MLA41821758242_052020-O.jpg"
+    },
+    {
+      "id": "MLA852257132",
+      "title": "Cargador Apple Macbook Pro Magsafe1 60w 13 Pulgadas",
+      "price": {
+        "currency": "ARS",
+        "amount": 11998,
+        "decimals": 0
+      },
+      "condition": "new",
+      "picture": "http://http2.mlstatic.com/D_917178-MLA42077328727_062020-I.jpg"
+    },
+    {
+      "id": "MLA864007325",
+      "title": "Macbook Air 13.3 256gb 8gb Ram Core I3 2020 Retina A2179",
+      "price": {
+        "currency": "ARS",
+        "amount": 209990,
+        "decimals": 0
+      },
+      "condition": "new",
+      "picture": "http://http2.mlstatic.com/D_862407-MLA42709705012_072020-O.jpg"
+    },
+    {
+      "id": "MLA874790900",
+      "title": "iPhone 4s 16 Gb Liberado!",
+      "price": {
+        "currency": "ARS",
+        "amount": 7990,
+        "decimals": 0
+      },
+      "condition": "used",
+      "picture": "http://http2.mlstatic.com/D_781855-MLA43243171619_082020-O.jpg"
+    },
+    {
+      "id": "MLA822752004",
+      "title": "Apple iPad 7 10.2 Retina 32gb Septima Generacion Original",
+      "price": {
+        "currency": "ARS",
+        "amount": 48799,
+        "decimals": 0
+      },
+      "condition": "new",
+      "picture": "http://http2.mlstatic.com/D_652163-MLA32895671212_112019-O.jpg"
+    },
+    {
+      "id": "MLA767372080",
+      "title": "Pin De Carga Jack Microfono Flex iPhone 6 6s 6 Plus 6s Plus",
+      "price": {
+        "currency": "ARS",
+        "amount": 1320,
+        "decimals": 0
+      },
+      "condition": "new",
+      "picture": "http://http2.mlstatic.com/D_986793-MLA42456060719_072020-I.jpg"
+    },
+    {
+      "id": "MLA843104109",
+      "title": "Funda Smart Magnetica Con Teclado Bluetooth iPad 10.2",
+      "price": {
+        "currency": "ARS",
+        "amount": 3708,
+        "decimals": 0
+      },
+      "condition": "new",
+      "picture": "http://http2.mlstatic.com/D_899761-MLA32567198878_102019-I.jpg"
+    },
+    {
+      "id": "MLA861019482",
+      "title": "iPhone 8 64gb Black %100 Garantia 3 Meses",
+      "price": {
+        "currency": "ARS",
+        "amount": 60000,
+        "decimals": 0
+      },
+      "condition": "new",
+      "picture": "http://http2.mlstatic.com/D_607395-MLA42129213463_062020-O.jpg"
+    },
+    {
+      "id": "MLA879083660",
+      "title": "Macbook Air 13 Mwtk2e/a-i3-8gb-256ssd-garantia Oficial",
+      "price": {
+        "currency": "ARS",
+        "amount": 186899,
+        "decimals": 0
+      },
+      "condition": "new",
+      "picture": "http://http2.mlstatic.com/D_889775-MLA43558281389_092020-O.jpg"
+    },
+    {
+      "id": "MLA871026637",
+      "title": "iPhone 8 Plus 64 Gb",
+      "price": {
+        "currency": "ARS",
+        "amount": 91999,
+        "decimals": 0
+      },
+      "condition": "used",
+      "picture": "http://http2.mlstatic.com/D_877558-MLA42993222951_082020-O.jpg"
+    },
+    {
+      "id": "MLA878094514",
+      "title": "Macbook Air 13 Mwtk2ll/a-i3-8gb-256ssd-garantia Oficial",
+      "price": {
+        "currency": "ARS",
+        "amount": 186140,
+        "decimals": 0
+      },
+      "condition": "new",
+      "picture": "http://http2.mlstatic.com/D_693969-MLA43558252662_092020-O.jpg"
+    },
+    {
+      "id": "MLA861020043",
+      "title": "iPhone 8 Plus 64 Gb Batería Al %100 ",
+      "price": {
+        "currency": "ARS",
+        "amount": 80000,
+        "decimals": 0
+      },
+      "condition": "new",
+      "picture": "http://http2.mlstatic.com/D_701426-MLA42129162459_062020-O.jpg"
+    },
+    {
+      "id": "MLA822721991",
+      "title": "Apple iPad 7 Gen 32gb 10.2 Retina Nuevo Modelo + Cuotas Mp",
+      "price": {
+        "currency": "ARS",
+        "amount": 48699,
+        "decimals": 0
+      },
+      "condition": "new",
+      "picture": "http://http2.mlstatic.com/D_833276-MLA32719166313_102019-O.jpg"
+    },
+    {
+      "id": "MLA706961261",
+      "title": "Auriculares Apple Earpods Originales iPad iPhone 4 5 5s 6 6s",
+      "price": {
+        "currency": "ARS",
+        "amount": 1499,
+        "decimals": 0
+      },
+      "condition": "new",
+      "picture": "http://http2.mlstatic.com/D_890899-MLA31019367775_062019-O.jpg"
+    },
+    {
+      "id": "MLA747668723",
+      "title": "Cable P/cargador Apple Macbook Magsafe 1 O 2 Applemartinez",
+      "price": {
+        "currency": "ARS",
+        "amount": 1989,
+        "decimals": 0
+      },
+      "condition": "new",
+      "picture": "http://http2.mlstatic.com/D_795746-MLA31075088427_062019-I.jpg"
+    }
+  ],
+  "author": {
+    "name": "guillermo",
+    "lastname": "ponce andres"
+  }
+}
