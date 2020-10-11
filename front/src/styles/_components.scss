@@ -2,18 +2,31 @@
 
 .search-nav {
   background-color: $primary-color;
-  display: flex;
   height: 48px;
   align-items: center;
   justify-content: center;
-  margin: 0 -6%;
 
   &--input {
-    height: 100%;
-    width: 100%;
-  }
+    position: relative;
+    .input-search {
+      height: 32px;
+      width: 100%;
+      padding: 16px;
 
-  .logo_mini {
-    height: 100%;
+      &::placeholder {
+        font-size: 18px;
+      }
+    }
+
+    .btn-search {
+      background-color: $light-grey-color;
+      height: 100%;
+      right: 0;
+      position: absolute;
+      width: 42px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 }
