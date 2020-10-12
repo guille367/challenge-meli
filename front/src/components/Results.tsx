@@ -21,7 +21,6 @@ function Results() {
     <>
       {isLoading && "Cargando"}
       {error}
-
       {!isLoading &&
         itemsResults &&
         itemsResults.items.map((item) => {

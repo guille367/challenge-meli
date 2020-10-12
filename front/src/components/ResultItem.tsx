@@ -22,7 +22,12 @@ function ResultItem(props: ResultItemProps) {
             {CURRENCIES[item.price.currency || "ars"]}
             {item.price.amount}
             {item.free_shipping && (
-              <img alt="free shiping" className="pl-2" src={shippingIcon} />
+              <img
+                alt="free shiping"
+                id="free-shiping-mark"
+                className="pl-2"
+                src={shippingIcon}
+              />
             )}
           </h5>
           <h5 className="item-title">{item.title}</h5>

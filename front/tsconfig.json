@@ -15,8 +15,6 @@
     "noEmit": true,
     "jsx": "react",
     "isolatedModules": true,
-
-    "types": ["node"],
     "typeRoots": ["node_modules/@types"]
   },
   "include": ["src", "src/**/*.ts", "spec/**/*.ts"]
