@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
-import { ISearchItemResponse } from "@models/items.models";
-import { getItemByQuery } from "@services/items.service";
+import { ISearchItemResponse } from "../models/items.models";
+import { getItemByQuery } from "../services/items.service";
 
 function Results() {
   const location = useLocation();
@@ -20,7 +20,7 @@ function Results() {
     })();
   }, [query]);
 
-  return <div>{query}</div>;
+  return <div>Results!</div>;
 }
 
 export default Results;

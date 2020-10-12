@@ -15,11 +15,9 @@
     "noEmit": true,
     "jsx": "react",
     "isolatedModules": true,
-    "paths": {
-      "@services/*": ["src/services/*"],
-      "@shared/*": ["src/shared/*"],
-      "@models/*": ["src/models/*"]
-    }
+
+    "types": ["node"],
+    "typeRoots": ["node_modules/@types"]
   },
-  "include": ["src"]
+  "include": ["src", "src/**/*.ts", "spec/**/*.ts"]
 }
