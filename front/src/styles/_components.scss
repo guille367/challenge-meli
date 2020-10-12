@@ -30,3 +30,28 @@
     }
   }
 }
+
+.item-result {
+  background-color: white;
+
+  &--image {
+    margin: 16px;
+    img {
+      border-radius: 4px;
+      height: 180px;
+      width: 180px;
+    }
+  }
+  &--description {
+    margin: 32px 0 32px 16px;
+    .item-price {
+      display: flex;
+      align-items: center;
+      font-size: 24px;
+      margin-bottom: 16px;
+    }
+    .item-title {
+      margin-top: 16px;
+    }
+  }
+}

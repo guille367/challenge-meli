@@ -24,12 +24,12 @@ function Results() {
   }, [query]);
 
   return (
-    <div>
+    <>
       {itemsResults &&
         itemsResults.items.map((item) => {
           return <ResultItem key={item.id} item={item} />;
         })}
-    </div>
+    </>
   );
 }
 
