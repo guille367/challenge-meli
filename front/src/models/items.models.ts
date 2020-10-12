@@ -24,3 +24,9 @@ export interface ISearchItemResponse {
   categories: string[];
   items: IItemSearch[];
 }
+
+export interface IItem extends IItemSearch {
+  author?: IAuthor;
+  sold_quantity: number;
+  description: string;
+}

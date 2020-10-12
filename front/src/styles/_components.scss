@@ -55,3 +55,50 @@
     }
   }
 }
+
+.item-detail {
+  background-color: white;
+  padding-top: 32px;
+  &-image {
+    height: 680px;
+    width: 680px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &-checkout {
+    &.condition {
+      margin-bottom: 14px;
+      font-size: 14px;
+    }
+    &.title {
+      font-size: 24px;
+    }
+    &.price {
+      margin: 32px 0;
+      font-size: 46px;
+    }
+    &.buy {
+      margin-right: 32px;
+    }
+  }
+  &-description {
+    margin-left: 32px;
+    &.title {
+      font-size: 28px;
+      margin-bottom: 32px;
+    }
+    &.text {
+      font-size: 16x;
+      margin-bottom: 32px;
+    }
+  }
+}
+
+.btn-primary {
+  background-color: $secondary-color;
+  border-radius: 4px;
+  color: white;
+  padding: 8px 0;
+  width: 100%;
+}

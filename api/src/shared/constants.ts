@@ -6,3 +6,7 @@ export const ENDPOINTS = {
   SEARCH: "https://api.mercadolibre.com/sites/MLA/search",
   CATEGORIES: "https://api.mercadolibre.com/sites/MLA/categories",
 };
+
+export const CONDITIONS = {
+  new: "Nuevo",
+};
