@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
-import { ISearchItemResponse } from "../models/items.models";
-import { getItemByQuery } from "../services/items.service";
+import { useSearchItems } from "../hooks/items.hooks";
 import ResultItem from "./ResultItem";
 
 function Results() {
   const location = useLocation();
   const [query, setQuery] = useState<string>("");
-  const [itemsResults, setItemsResults] = useState<ISearchItemResponse>();
+  const { isLoading, data: itemsResults, error, execute } = useSearchItems();
 
   useEffect(() => {
     const newQuery = new URLSearchParams(location.search).get("q") || "";
@@ -15,17 +14,16 @@ function Results() {
   }, [location.search]);
 
   useEffect(() => {
-    (async () => {
-      const itemsReponse = await getItemByQuery(query);
-      itemsReponse.items = itemsReponse.items.slice(0, 4);
-
-      setItemsResults(itemsReponse);
-    })();
+    execute(query);
   }, [query]);
 
   return (
     <>
-      {itemsResults &&
+      {isLoading && "Cargando"}
+      {error}
+
+      {!isLoading &&
+        itemsResults &&
         itemsResults.items.map((item) => {
           return <ResultItem key={item.id} item={item} />;
         })}
