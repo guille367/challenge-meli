@@ -24,7 +24,7 @@ function Search(_props: any) {
         className="search-nav grid grid-cols-12 gap-12"
       >
         <a className="link-home col-start-2 col-span-1" href="/">
-          <img src={logo} />
+          <img alt="meli logo" src={logo} />
         </a>
         <div className="col-span-9 search-nav--input">
           <input
@@ -41,7 +41,7 @@ function Search(_props: any) {
             disabled={text === ""}
             className="btn-search"
           >
-            <img src={search} />
+            <img alt="search" src={search} />
           </button>
         </div>
       </form>
