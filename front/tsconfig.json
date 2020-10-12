@@ -1,11 +1,8 @@
 {
   "compilerOptions": {
+    "baseUrl": "./",
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -17,9 +14,12 @@
     "resolveJsonModule": true,
     "noEmit": true,
     "jsx": "react",
-    "isolatedModules": true
+    "isolatedModules": true,
+    "paths": {
+      "@services/*": ["src/services/*"],
+      "@shared/*": ["src/shared/*"],
+      "@models/*": ["src/models/*"]
+    }
   },
-  "include": [
-    "src"
-  ]
+  "include": ["src"]
 }

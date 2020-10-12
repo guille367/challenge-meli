@@ -4,7 +4,8 @@ import search from "../images/ic_search.png";
 import { useHistory } from "react-router-dom";
 
 function Search(_props: any) {
-  let history = useHistory();
+  const history = useHistory();
+
   const [text, setText] = useState<string>("");
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
