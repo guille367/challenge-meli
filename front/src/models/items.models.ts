@@ -1,3 +1,8 @@
+export interface ICategory {
+  id: string;
+  path: string[];
+}
+
 export interface IAuthor {
   name: string;
   lastname: string;
@@ -19,9 +24,15 @@ export interface IItemSearch {
   free_shipping: boolean;
 }
 
+export interface ISearchCategories {
+  id: string;
+  name: string;
+  results: number;
+}
+
 export interface ISearchItemResponse {
   author?: IAuthor;
-  categories: string[];
+  categories: ISearchCategories[];
   items: IItemSearch[];
 }
 

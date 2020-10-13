@@ -13,6 +13,7 @@ export interface IItem extends IItemSearch {
   author?: IAuthor;
   sold_quantity: number;
   description: string;
+  category_id: string;
 }
 
 export interface IItemSearch {
@@ -25,9 +26,15 @@ export interface IItemSearch {
   free_shipping: boolean;
 }
 
+export interface ISearchCategories {
+  id: string;
+  name: string;
+  results: number;
+}
+
 export interface ISearchResponse {
   author?: IAuthor;
-  categories: string[];
+  categories: ISearchCategories[];
   items: IItemSearch[];
 }
 
@@ -53,7 +60,7 @@ export class Item extends ItemSearch implements IItem {
 
 export class SearchResponse implements ISearchResponse {
   author?: IAuthor;
-  categories: string[] = [];
+  categories: ISearchCategories[] = [];
   items: IItemSearch[] = [];
 }
 

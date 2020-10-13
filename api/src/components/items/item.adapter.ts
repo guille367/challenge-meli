@@ -28,9 +28,8 @@ export default class ItemAdapter {
 
   getItemList(meliItem: IMeliSearchItemResponse): ISearchResponse {
     const categories =
-      meliItem.available_filters
-        .find((filter) => filter.id === "category")
-        ?.values.map((v) => v.name) || [];
+      meliItem.available_filters.find((filter) => filter.id === "category")
+        ?.values || [];
 
     const items = meliItem.results.map<IItemSearch>((itemResult) => {
       const item: IItemSearch = {
