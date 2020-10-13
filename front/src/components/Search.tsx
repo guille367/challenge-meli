@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import logo from "../images/logo_ml_mini.png";
 import search from "../images/ic_search.png";
-import { useHistory } from "react-router-dom";
+import { useHistory, useLocation } from "react-router-dom";
 
 function Search(_props: any) {
   const history = useHistory();
+  const location = useLocation();
 
   const [text, setText] = useState<string>("");
 
@@ -16,6 +17,11 @@ function Search(_props: any) {
   const handleTextSearch = (e: React.FormEvent<HTMLInputElement>) => {
     setText(e.currentTarget.value);
   };
+
+  useEffect(() => {
+    const newQuery = new URLSearchParams(location.search).get("q") || "";
+    setText(newQuery);
+  }, [location.search]);
 
   return (
     <header>
