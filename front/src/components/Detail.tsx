@@ -20,7 +20,7 @@ function Detail() {
   const renderItem = () => {
     return (
       <div>
-        <Breadcrumb categoryId={"dasd"} />
+        <Breadcrumb categoryId={item?.category_id || ""} />
         <div className="item-detail grid grid-cols-12">
           <div className="item-detail-image col-span-6">
             <img alt={item?.title} src={item?.picture} />

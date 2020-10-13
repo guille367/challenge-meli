@@ -16,15 +16,27 @@ function Breadcrumb(props: ParamTypes) {
   }, [categoryId]);
 
   const renderBreadCrumb = () => {
-    return categoryData?.path.map((category) => {
-      return <span key={category}>{category}</span>;
-    });
+    return (
+      <>
+        {categoryData?.path.map((category, i) => {
+          return (
+            <span className="breadcrumb-item" key={i}>
+              {" "}
+              {category} &gt;{" "}
+            </span>
+          );
+        })}
+        <span className="breadcrumb-item" key={categoryData?.name}>
+          {categoryData?.name}
+        </span>
+      </>
+    );
   };
 
   return (
-    (categoryData && <div className="breadcrumb">{renderBreadCrumb}</div>) || (
-      <div></div>
-    )
+    (categoryData && (
+      <div className="breadcrumb">{renderBreadCrumb()}</div>
+    )) || <div></div>
   );
 }
 

@@ -1,5 +1,6 @@
 export interface ICategory {
   id: string;
+  name: string;
   path: string[];
 }
 
@@ -40,4 +41,5 @@ export interface IItem extends IItemSearch {
   author?: IAuthor;
   sold_quantity: number;
   description: string;
+  category_id: string;
 }

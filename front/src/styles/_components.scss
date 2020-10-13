@@ -105,5 +105,7 @@
 
 .breadcrumb {
   margin: 16px 0;
-  font-size: 14px;
+  &-item {
+    font-size: 14px;
+  }
 }
