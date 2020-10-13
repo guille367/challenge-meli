@@ -6,6 +6,8 @@ COPY front/package*.json /app/
 RUN npm install --verbose
 COPY ./front /app/
 
+ENV REACT_APP_API_MELI_URL http://localhost/api
+
 RUN npm run build
 
 FROM nginx:1.17.0
