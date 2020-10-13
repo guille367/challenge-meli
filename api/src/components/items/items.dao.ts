@@ -2,7 +2,7 @@ import {
   IMeliItemDescriptionResponse,
   IMeliItemResponse,
   IMeliSearchItemResponse,
-} from "./item.models";
+} from "./items.models";
 import axios from "axios";
 import { ENDPOINTS } from "@shared/constants";
 

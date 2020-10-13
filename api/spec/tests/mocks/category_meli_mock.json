@@ -1,0 +1,24 @@
+{
+  "id": "MLA3697",
+  "name": "Auriculares",
+  "picture": "http://resources.mlstatic.com/category/images/e8a98e9b-dd25-4f70-abce-09228c4ce485.png",
+  "permalink": null,
+  "total_items_in_this_category": 32974,
+  "path_from_root": [
+    {
+      "id": "MLA1000",
+      "name": "Electrónica, Audio y Video"
+    },
+    {
+      "id": "MLA409810",
+      "name": "Audio"
+    },
+    {}
+  ],
+  "children_categories": [],
+  "attribute_types": "variations",
+  "settings": {},
+  "meta_categ_id": null,
+  "attributable": false,
+  "date_created": "2018-04-25T08:12:56.000Z"
+}

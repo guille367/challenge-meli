@@ -1,5 +1,5 @@
-import { IItem, ISearchResponse } from "./item.models";
-import ItemAdapter from "./item.adapter";
+import { IItem, ISearchResponse } from "./items.models";
+import ItemAdapter from "./items.adapter";
 import ItemsDAO from "./items.dao";
 class ItemsService {
   itemsDao: ItemsDAO;

@@ -1,3 +1,9 @@
+export interface ICategory {
+  id: string;
+  name: string;
+  path: string[];
+}
+
 export interface IAuthor {
   name: string;
   lastname: string;
@@ -56,6 +62,7 @@ export class ItemSearch implements IItemSearch {
 export class Item extends ItemSearch implements IItem {
   sold_quantity: number = 0;
   description: string = "";
+  category_id: string = "";
 }
 
 export class SearchResponse implements ISearchResponse {
@@ -92,6 +99,7 @@ export interface IMeliItemResponse {
   ];
   sold_quantity: number;
   description: IMeliItemDescriptionResponse;
+  category_id: string;
 }
 
 export interface IMeliSearchItem {
@@ -121,4 +129,15 @@ export interface IMeliSearchItemResponse {
     }
   ];
   results: IMeliSearchItem[];
+}
+
+export interface IMeliCategoryResponse {
+  id: string;
+  name: string;
+  path_from_root: [
+    {
+      id: string;
+      name: string;
+    }
+  ];
 }

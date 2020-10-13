@@ -1,35 +1,155 @@
 {
   "categories": [
-    "Computación",
-    "Celulares y Smartphones",
-    "Accesorios para Celulares",
-    "Repuestos de Celulares",
-    "Libros, Revistas y Comics",
-    "Smartwatches y Accesorios",
-    "Joyas y Relojes",
-    "Electrónica, Audio y Video",
-    "Música, Películas y Series",
-    "Ropa y Accesorios",
-    "Hogar, Muebles y Jardín",
-    "Alimentos y Bebidas",
-    "Instrumentos Musicales",
-    "Accesorios para Vehículos",
-    "Industrias y Oficinas",
-    "Deportes y Fitness",
-    "Antigüedades y Colecciones",
-    "Juegos y Juguetes",
-    "Souvenirs, Cotillón y Fiestas",
-    "Herramientas y Construcción",
-    "Servicios",
-    "Belleza y Cuidado Personal",
-    "Cámaras y Accesorios",
-    "Salud y Equipamiento Médico",
-    "Consolas y Videojuegos",
-    "Animales y Mascotas",
-    "Arte, Librería y Mercería",
-    "Bebés",
-    "Otras categorías",
-    "Otros"
+    {
+      "id": "MLA1648",
+      "name": "Computación",
+      "results": 13402
+    },
+    {
+      "id": "MLA1055",
+      "name": "Celulares y Smartphones",
+      "results": 16182
+    },
+    {
+      "id": "MLA3502",
+      "name": "Accesorios para Celulares",
+      "results": 22129
+    },
+    {
+      "id": "MLA3813",
+      "name": "Repuestos de Celulares",
+      "results": 8039
+    },
+    {
+      "id": "MLA3025",
+      "name": "Libros, Revistas y Comics",
+      "results": 3584
+    },
+    {
+      "id": "MLA417704",
+      "name": "Smartwatches y Accesorios",
+      "results": 2702
+    },
+    {
+      "id": "MLA3937",
+      "name": "Joyas y Relojes",
+      "results": 2324
+    },
+    {
+      "id": "MLA1000",
+      "name": "Electrónica, Audio y Video",
+      "results": 2003
+    },
+    {
+      "id": "MLA1168",
+      "name": "Música, Películas y Series",
+      "results": 392
+    },
+    {
+      "id": "MLA1574",
+      "name": "Hogar, Muebles y Jardín",
+      "results": 350
+    },
+    {
+      "id": "MLA1430",
+      "name": "Ropa y Accesorios",
+      "results": 280
+    },
+    {
+      "id": "MLA1182",
+      "name": "Instrumentos Musicales",
+      "results": 224
+    },
+    {
+      "id": "MLA1132",
+      "name": "Juegos y Juguetes",
+      "results": 196
+    },
+    {
+      "id": "MLA5725",
+      "name": "Accesorios para Vehículos",
+      "results": 168
+    },
+    {
+      "id": "MLA1403",
+      "name": "Alimentos y Bebidas",
+      "results": 168
+    },
+    {
+      "id": "MLA1499",
+      "name": "Industrias y Oficinas",
+      "results": 141
+    },
+    {
+      "id": "MLA1367",
+      "name": "Antigüedades y Colecciones",
+      "results": 140
+    },
+    {
+      "id": "MLA1246",
+      "name": "Belleza y Cuidado Personal",
+      "results": 98
+    },
+    {
+      "id": "MLA407134",
+      "name": "Herramientas y Construcción",
+      "results": 98
+    },
+    {
+      "id": "MLA9304",
+      "name": "Souvenirs, Cotillón y Fiestas",
+      "results": 98
+    },
+    {
+      "id": "MLA1368",
+      "name": "Arte, Librería y Mercería",
+      "results": 84
+    },
+    {
+      "id": "MLA1276",
+      "name": "Deportes y Fitness",
+      "results": 84
+    },
+    {
+      "id": "MLA1384",
+      "name": "Bebés",
+      "results": 70
+    },
+    {
+      "id": "MLA1540",
+      "name": "Servicios",
+      "results": 56
+    },
+    {
+      "id": "MLA1039",
+      "name": "Cámaras y Accesorios",
+      "results": 28
+    },
+    {
+      "id": "MLA409431",
+      "name": "Salud y Equipamiento Médico",
+      "results": 28
+    },
+    {
+      "id": "MLA1071",
+      "name": "Animales y Mascotas",
+      "results": 14
+    },
+    {
+      "id": "MLA401278",
+      "name": "Lentes de Realidad Virtual",
+      "results": 14
+    },
+    {
+      "id": "MLA1953",
+      "name": "Otras categorías",
+      "results": 140
+    },
+    {
+      "id": "MLA1915",
+      "name": "Otros",
+      "results": 84
+    }
   ],
   "items": [
     {

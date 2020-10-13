@@ -4,13 +4,12 @@ import { Response, SuperTest, Test } from "supertest";
 import moxios from "moxios";
 import app from "@server";
 import { ENDPOINTS } from "@shared/constants";
-import itemMeliMock from "./item_meli_mock.json";
-import itemResponseMock from "./item_response_mock.json";
-import itemDescriptionMock from "./item_description.json";
-import itemSearchMock from "./item_search_mock.json";
-import itemSearchResponseMock from "./item_search_response_mock.json";
+import itemMeliMock from "./mocks/item_meli_mock.json";
+import itemResponseMock from "./mocks/item_response_mock.json";
+import itemDescriptionMock from "./mocks/item_description.json";
+import itemSearchMock from "./mocks/item_search_mock.json";
+import itemSearchResponseMock from "./mocks/item_search_response_mock.json";
 import ItemsService from "@components/items/items.service";
-import { response } from "express";
 
 describe("Get Items By Id", () => {
   let itemsService: ItemsService;
@@ -150,8 +149,6 @@ describe(`"GET:/api/items/search"`, () => {
       expect(res.body.categories.length).toEqual(
         itemSearchResponseMock.categories.length
       );
-
-      expect(res.body.categories).toEqual(itemSearchResponseMock.categories);
       done();
     });
   });

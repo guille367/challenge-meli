@@ -4,7 +4,7 @@ import {
   IMeliItemResponse,
   IMeliSearchItemResponse,
   ISearchResponse,
-} from "./item.models";
+} from "./items.models";
 
 export default class ItemAdapter {
   getItem(meliItem: IMeliItemResponse): IItem {
@@ -21,6 +21,7 @@ export default class ItemAdapter {
       picture: meliItem.pictures[0]?.url,
       sold_quantity: meliItem.sold_quantity,
       description: meliItem.description.plain_text,
+      category_id: meliItem.category_id,
     };
 
     return item;

@@ -4,7 +4,7 @@ export const paramMissingError =
 export const ENDPOINTS = {
   ITEMS: "https://api.mercadolibre.com/items",
   SEARCH: "https://api.mercadolibre.com/sites/MLA/search",
-  CATEGORIES: "https://api.mercadolibre.com/sites/MLA/categories",
+  CATEGORIES: "https://api.mercadolibre.com/categories",
 };
 
 export const CONDITIONS = {
