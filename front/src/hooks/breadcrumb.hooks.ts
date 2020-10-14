@@ -8,6 +8,7 @@ const searchCategory = async (id: string): Promise<ICategory> => {
 
 export const useSearchCategory = () => {
   const [categoryData, setCategoryData] = useState<ICategory>();
+  const [error, setError] = useState<string>("");
 
   const execute = async (id: string) => {
     try {
@@ -15,7 +16,7 @@ export const useSearchCategory = () => {
       setCategoryData(response);
       return response;
     } catch (error) {
-      throw error;
+      setError(error.message);
     }
   };
 

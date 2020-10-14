@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
-import { DiagnosticCategory } from "typescript";
 import { useSearchItems } from "../hooks/items.hooks";
 import Breadcrumb from "./Breadcrumb";
+import Error from "./Error";
 import ResultItem from "./ResultItem";
 
 function Results() {
@@ -42,8 +42,8 @@ function Results() {
 
   return (
     <>
+      <Error message={error} />
       {isLoading && "Cargando"}
-      {error}
       {!isLoading && itemsResults && renderResults()}
     </>
   );

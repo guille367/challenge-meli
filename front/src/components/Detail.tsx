@@ -4,6 +4,7 @@ import { useSearchItemDetail } from "src/hooks/items.hooks";
 import CURRENCIES from "src/shared/currencies";
 import CONDITIONS from "../shared/condtitions";
 import Breadcrumb from "./Breadcrumb";
+import Error from "./Error";
 
 interface ParamTypes {
   id: string;
@@ -56,10 +57,8 @@ function Detail() {
 
   return (
     <div>
+      <Error message={error} />
       {isLoading && "Cargando"}
-
-      {error}
-
       {!isLoading && item && renderItem()}
     </div>
   );
