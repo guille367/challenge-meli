@@ -2,7 +2,7 @@ import { useCallback, useState } from "react";
 import { ICategory } from "src/models/items.models";
 import AxiosInstance from "../shared/axiosConfig";
 
-const searchCategory = async (id: string): Promise<ICategory> => {
+export const searchCategory = async (id: string): Promise<ICategory> => {
   return (await AxiosInstance.get<ICategory>(`/categories/${id}`)).data;
 };
 

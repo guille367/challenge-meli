@@ -24,10 +24,13 @@ function Detail() {
         <Breadcrumb categoryId={item?.category_id || ""} />
         <div className="item-detail grid grid-cols-12">
           <div className="item-detail-image col-span-6">
-            <img alt={item?.title} src={item?.picture} />
+            <img id="item-image" alt={item?.title} src={item?.picture} />
           </div>
           <div className="item-detail-checkout col-span-3">
-            <div className="item-detail-checkout condition">
+            <div
+              id="item-conditions"
+              className="item-detail-checkout condition"
+            >
               <span>{CONDITIONS[item?.condition || "new"]}</span>
               {item?.sold_quantity && item.sold_quantity === 0 ? (
                 <span> {item.sold_quantity} vendidos</span>
@@ -48,7 +51,9 @@ function Detail() {
             <h3 className="item-detail-description title">
               Descripción del producto
             </h3>
-            <p className="item-detail-description text">{item?.description}</p>
+            <p id="item-description" className="item-detail-description text">
+              {item?.description}
+            </p>
           </div>
         </div>
       </div>
