@@ -31,9 +31,9 @@ Copiar los archivos .env.dist definiendo los respectivos valores
 - API_PORT=3000 [Opcional] Si no se configura, la api levanta en el puerto 3000
 - NODE_ENV=(production|development)
 
-## Docker
+## Levantar el proyecto con Docker
 
-### PROD
+### PROD ()
 
 `$ docker-compose -f docker-compose.prod.yml up --build`
 
@@ -41,6 +41,8 @@ El compose productivo cuenta de 2 contenedores:
 
 - api - api compilada escuchando en el puerto configurado por variable de entorno
 - server - nginx sirviendo los archivos estáticos del build del front y como proxy reverso para la api
+
+<b>De ésta forma podemos ingresar a la aplicación en http://localhost</b>
 
 ### DEV
 
@@ -56,4 +58,5 @@ compose compuesto de 2 imágenes:
 Para correr los tests, correr el siguiente comando en para los diferentes proyectos ubicados en /front y /back luego de instalar las dependencias
 
 `$ npm i`
+
 `$ npm run test`
