@@ -2,6 +2,13 @@ import React from "react";
 import { shallow, ShallowWrapper } from "enzyme";
 import Search from "../Search";
 
+jest.mock("react-router-dom", () => ({
+  ...jest.requireActual("react-router-dom"),
+  useLocation: () => ({
+    search: "?q=apple",
+  }),
+}));
+
 describe("Search component", () => {
   let component: ShallowWrapper;
   let spySubmit = jest.fn();
