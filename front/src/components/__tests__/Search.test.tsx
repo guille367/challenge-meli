@@ -35,7 +35,7 @@ describe("Search component", () => {
     expect(component.find("#btn-submit").prop("disabled")).toBe(false);
   });
 
-  xit("should call the submit event when text is not null and button click event is triggered", () => {
+  it("should call the submit event when text is not null and button click event is triggered", () => {
     component.find("#input-search").simulate("change", {
       currentTarget: { value: "apple" },
     });
