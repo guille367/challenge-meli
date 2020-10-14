@@ -54,6 +54,15 @@
       margin-top: 16px;
     }
   }
+  .item-result-location {
+    margin-top: 32px;
+    height: 32px;
+    display: flex;
+    align-items: flex-end;
+    &--description {
+      font-size: 12px;
+    }
+  }
 }
 
 .item-detail {

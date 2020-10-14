@@ -30,6 +30,7 @@ export interface IItemSearch {
   picture: string;
   condition: string;
   free_shipping: boolean;
+  ubication?: string;
 }
 
 export interface ISearchCategories {
@@ -57,6 +58,7 @@ export class ItemSearch implements IItemSearch {
   picture: string = "";
   condition: string = "";
   free_shipping: boolean = false;
+  ubication: string = "";
 }
 
 export class Item extends ItemSearch implements IItem {
@@ -112,6 +114,9 @@ export interface IMeliSearchItem {
   thumbnail: string;
   condition: string;
   free_shipping: boolean;
+  address: {
+    state_name: string;
+  };
 }
 
 export interface IMeliSearchItemResponse {

@@ -21,6 +21,7 @@ export const useSearchCategory = () => {
   };
 
   return {
+    error,
     categoryData,
     execute: useCallback(execute, []),
   };

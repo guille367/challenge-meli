@@ -23,6 +23,7 @@ export interface IItemSearch {
   picture: string;
   condition: string;
   free_shipping: boolean;
+  ubication: string;
 }
 
 export interface ISearchCategories {

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useSearchCategory } from "src/hooks/breadcrumb.hooks";
 
 interface ParamTypes {
@@ -13,7 +13,7 @@ function Breadcrumb(props: ParamTypes) {
     if (categoryId !== "") {
       execute(categoryId);
     }
-  }, [categoryId]);
+  }, [categoryId, execute]);
 
   const renderBreadCrumb = () => {
     return (

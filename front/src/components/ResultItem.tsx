@@ -32,8 +32,10 @@ function ResultItem(props: ResultItemProps) {
           </h5>
           <h5 className="item-title">{item.title}</h5>
         </div>
-        <div className="item-location col-span-3">
-          <span className="item-location--description"></span>
+        <div className="item-result-location col-span-3">
+          <div className="item-result-location--description">
+            {item.ubication}
+          </div>
         </div>
       </div>
     </Link>

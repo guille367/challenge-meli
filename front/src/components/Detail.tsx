@@ -16,7 +16,7 @@ function Detail() {
 
   useEffect(() => {
     execute(id);
-  }, [id]);
+  }, [id, execute]);
 
   const renderItem = () => {
     return (

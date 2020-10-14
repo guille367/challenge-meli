@@ -18,7 +18,7 @@ function Results() {
 
   useEffect(() => {
     execute(query);
-  }, [query]);
+  }, [query, execute]);
 
   useEffect(() => {
     if (itemsResults && itemsResults.categories.length > 0) {

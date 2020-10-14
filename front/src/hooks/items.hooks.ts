@@ -5,7 +5,6 @@ import AxiosInstance from "../shared/axiosConfig";
 export const searchItems = async (
   term: string
 ): Promise<ISearchItemResponse> => {
-  console.log("eeeeeeee");
   return (await AxiosInstance.get<ISearchItemResponse>(`/items?q=${term}`))
     .data;
 };
@@ -19,7 +18,6 @@ export const useSearchItems = () => {
     try {
       setIsLoading(true);
       const response = await searchItems(term);
-      console.log("eeeeeeee", response);
       setData(response);
       setIsLoading(false);
       return response;
@@ -38,7 +36,6 @@ export const useSearchItems = () => {
 };
 
 export const searchItem = async (id: string): Promise<IItem> => {
-  console.log("eeeeeeeeqqqqqqq");
   return (await AxiosInstance.get<IItem>(`/items/${id}`)).data;
 };
 
@@ -49,7 +46,6 @@ export const useSearchItemDetail = () => {
 
   const execute = async (id: string) => {
     try {
-      console.log("blehh");
       setIsLoading(true);
       const response = await searchItem(id);
       setData(response);
