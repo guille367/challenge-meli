@@ -15,25 +15,23 @@ O bien sin docker
 
 Copiar los archivos .env.dist definiendo los respectivos valores
 
-`$ cp /front/src/.env.dist src/.env`
+`$ cp front/.env.dist front/.env`
 
-`$ cp /api/src/.env.dist src/.env`
+`$ cp api/.env.dist api/.env`
 
 ### Front:
 
-- PORT=8080 (puerto de ejemplo)
 - REACT_APP_API_MELI_URL=http://localhost[:API_PORT]/api (en caso de buildear prod, apuntar a http://localhost/api)
 - REACT_APP_AUTHOR_NAME='Ponce Andrés' [Opcional, configura valor que se enviará como header para el request con author]
 - REACT_APP_AUTHOR_LASTNAME=Guillermo [Opcional, configura valor que se enviará como header para el request con author]
 
 ### Back:
 
-- API_PORT=3000 [Opcional] Si no se configura, la api levanta en el puerto 3000
 - NODE_ENV=(production|development)
 
 ## Levantar el proyecto con Docker
 
-### PROD ()
+### PROD
 
 `$ docker-compose -f docker-compose.prod.yml up --build`
 
@@ -52,6 +50,24 @@ compose compuesto de 2 imágenes:
 
 - api-meli - api en modo dev, corriendo con nodemon y ndb habilitado en el puerto 9229
 - front-meli - front en modo dev
+
+## Levantar el proyecto sin docker
+
+### Front
+
+Sobre la carpeta front
+
+`$ npm i && npm run start`
+
+De ésta forma la aplicación se levanta sobre http://localhost:3000
+
+### Back
+
+Sobre la carpeta back
+
+`$ npm i && npm run start`
+
+De ésta forma la aplicación se levanta sobre http://localhost:8080 y el front debería configurar su variable REACT_APP_API_MELI_URL a http://localhost:8080/api
 
 ## Tests
 
