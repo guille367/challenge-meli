@@ -2,7 +2,7 @@
 
 ## Requisitos
 
-Docker :whale2
+Docker :whale2:
 
 - Docker 19
 - docker-compose 1.26
